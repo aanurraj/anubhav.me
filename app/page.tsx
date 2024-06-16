@@ -6,11 +6,13 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITEDATA } from "@/data/siteData";
 import { ProjectCard } from "@/components/project-card";
+import { ThemeButton } from "@/components/theme-provider";
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white">
+    <main className="container relative w-full mx-auto scroll-my-12 overflow-auto p-4 md:p-16 dark:bg-gray-950">
+      <section className="mx-auto w-full max-w-2xl space-y-8 dark:bg-gray-950">
+        <ThemeButton />
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{SITEDATA.name}</h1>
