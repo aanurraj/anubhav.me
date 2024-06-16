@@ -46,6 +46,7 @@ export const SITEDATA = {
     "Docker",
     "AWS",
     "PostgreSQL",
+    "Tailwind CSS"
   ],
   projects: [
     {
