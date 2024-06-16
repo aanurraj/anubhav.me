@@ -9,8 +9,7 @@ import { SITEDATA } from "@/data/siteData";
 import { ProjectCard } from "@/components/project-card";
 
 export const metadata: Metadata = {
-  title: `${SITEDATA.name} | ${SITEDATA.about}`,
-  description: SITEDATA.summary,
+  title: `${SITEDATA.name}`,
 };
 
 export default function Page() {
