@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{SITEDATA.name}</h1>
-            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
+            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
               {SITEDATA.about}
             </p>
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
@@ -33,7 +33,7 @@ export default function Page() {
                 {SITEDATA.location}
               </a>
             </p>
-            <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
+            <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground">
               <Button className="size-8" variant="outline" size="icon" asChild>
                 <a href={`mailto:${SITEDATA.contact.email}`}>
                   <MailIcon className="size-4" />
@@ -62,7 +62,7 @@ export default function Page() {
         </div>
         <Section>
           <h2 className="text-xl font-bold">About</h2>
-          <p className="text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
+          <p className="text-pretty font-mono text-sm text-muted-foreground">
             {SITEDATA.summary}
           </p>
         </Section>
@@ -72,28 +72,20 @@ export default function Page() {
           <h3 className="text-l font-bold">Languages</h3>
           <div className="flex flex-wrap gap-1">
             {SITEDATA.languages.map((language) => {
-              return (
-                <Badge className="print:text-[10px]" key={language}>
-                  {language}
-                </Badge>
-              );
+              return <Badge key={language}>{language}</Badge>;
             })}
           </div>
           <h3 className="text-l font-bold">Technologies</h3>
           <div className="flex flex-wrap gap-1">
             {SITEDATA.technologies.map((technologie) => {
-              return (
-                <Badge className="print:text-[10px]" key={technologie}>
-                  {technologie}
-                </Badge>
-              );
+              return <Badge key={technologie}>{technologie}</Badge>;
             })}
           </div>
         </Section>
 
-        <Section className="print-force-new-page scroll-mb-16">
+        <Section className="scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+          <div className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
             {SITEDATA.projects.map((project) => {
               return (
                 <ProjectCard
@@ -124,7 +116,7 @@ export default function Page() {
                         {work.badges.map((badge) => (
                           <Badge
                             variant="secondary"
-                            className="align-middle text-xs print:text-[8px] print:leading-tight print:px-1 print:py-0.5"
+                            className="align-middle text-xs"
                             key={badge}
                           >
                             {badge}
@@ -137,11 +129,11 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none print:text-[12px]">
+                  <h4 className="font-mono text-sm leading-none">
                     {work.title}
                   </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs print:text-[10px]">
+                <CardContent className="mt-2 text-xs">
                   {work.description}
                 </CardContent>
               </Card>
@@ -163,9 +155,7 @@ export default function Page() {
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="mt-2 print:text-[12px]">
-                  {education.degree}
-                </CardContent>
+                <CardContent className="mt-2">{education.degree}</CardContent>
               </Card>
             );
           })}
