@@ -1,16 +1,11 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITEDATA } from "@/data/siteData";
 import { ProjectCard } from "@/components/project-card";
-
-export const metadata: Metadata = {
-  title: `${SITEDATA.name}`,
-};
 
 export default function Page() {
   return (
