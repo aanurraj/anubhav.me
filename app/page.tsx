@@ -154,6 +154,9 @@ export default function Page() {
                       {education.start} - {education.end}
                     </div>
                   </div>
+                  <h4 className="font-mono text-sm leading-none">
+                    Under Graduate College
+                  </h4>
                 </CardHeader>
                 <CardContent className="mt-2">{education.degree}</CardContent>
               </Card>
