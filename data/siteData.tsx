@@ -6,7 +6,7 @@ export const SITEDATA = {
   location: "Pune, India",
   locationLink: "https://www.google.com/maps/place/Pune",
   about:
-    "Does backend for one half, learning architecture for the other",
+    "Does backend for one half, learning architecture for the other.",
   summary:
     "I’m you would have obviously read my name, a Software Developer with a knack for turning other people’s idea (for now) into code. When I’m not busy making pixels perfect or debugging my life choices (Is an Americano better made with a Moka Pot or a French Press?), you can find me reading system architecture, or plotting world domination (just kidding, or am I?).",
   avatarUrl: "https://avatars.githubusercontent.com/u/28955148?v=4",
@@ -51,7 +51,7 @@ export const SITEDATA = {
     {
       title: "The Daily Highlight",
       techStack: ["Go Lang", "DynamoDB", "AWS Lambda"],
-      description: "A Drawing app",
+      description: "Brings my random kindle highlights daily into my inbox",
       link: {
         href: "https://github.com/aanurraj/daily-kindle-email",
       },
