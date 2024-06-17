@@ -7,7 +7,7 @@ npm i
 npm run dev
 # or
 pnpm i
-pnpm dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
