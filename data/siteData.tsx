@@ -1,31 +1,31 @@
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const SITEDATA = {
-  name: "Ayush Gupta",
-  initials: "AG",
-  location: "Delhi, India",
-  locationLink: "https://www.google.com/maps/place/Delhi",
+  name: "Anubhav Singh",
+  initials: "AS",
+  location: "Pune, India",
+  locationLink: "https://www.google.com/maps/place/Pune",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "Does backend for one half, learning architecture for the other",
   summary:
-    "As a Full Stack Engineer, I specialize in taking products from concept to launch. Currently, I work mostly with Python, NextJS, Node.js and Go. I have over 2+ years of experience working remotely.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/28400861?v=4",
+    "I’m you would have obviously read my name, a Software Developer with a knack for turning other people’s idea (for now) into code. When I’m not busy making pixels perfect or debugging my life choices (Is an Americano better made with a Moka Pot or a French Press?), you can find me reading system architecture, or plotting world domination (just kidding, or am I?).",
+  avatarUrl: "https://avatars.githubusercontent.com/u/28955148?v=4",
   contact: {
-    email: "siayush.gupta@gmail.com",
+    email: "anubhavraj.08@gmail.com",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/siAyush",
+        url: "https://github.com/aanurraj",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/siayush/",
+        url: "https://www.linkedin.com/in/anubhavrajsingh/",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/siAyushh",
+        url: "https://x.com/aanurraj",
         icon: XIcon,
       },
     ],
@@ -34,76 +34,49 @@ export const SITEDATA = {
     {
       school: "Galgotias University",
       degree: "Bachelor's Degree in Computer Science and Engineering",
-      start: "2017",
-      end: "2021",
+      start: "2016",
+      end: "2020",
     },
   ],
-  languages: ["JavaScript", "TypeScript", "Python", "Go", "C"],
+  languages: ["JavaScript", "Java", "Python", "Go", "C++"],
   technologies: [
-    "React/Next.js",
     "Node.js",
     "MongoDB",
     "Docker",
     "AWS",
-    "PostgreSQL",
-    "Tailwind CSS"
+    "Kubernetes",
+    "MySQL",
   ],
   projects: [
     {
-      title: "miro",
-      techStack: ["TypeScript", "Next.js", "Clerk", "pnpm", "shadcn/ui"],
+      title: "The Daily Highlight",
+      techStack: ["Go Lang", "DynamoDB", "AWS Lambda"],
       description: "A Drawing app",
       link: {
-        href: "https://github.com/siAyush/miro",
-      },
-    },
-    {
-      title: "ScratchML",
-      techStack: ["Python", "NumPy"],
-      description:
-        "Implementations of the Machine Learning models and algorithms from scratch using NumPy only.",
-      link: {
-        href: "https://github.com/siAyush/ScratchML",
-      },
-    },
-    {
-      title: "Natours",
-      techStack: ["NodeJS", "ExpressJs", "MongoDB", "Node.js"],
-      description:
-        "An tour booking web app with user authentication and authorization.",
-      link: {
-        href: "https://github.com/siAyush/Natours",
-      },
-    },
-    {
-      title: "Model-Zoo",
-      techStack: ["Pytorch", "Python"],
-      description: "Implementation of various deep learning models in Pytorch",
-      link: {
-        href: "https://github.com/siAyush/Model-Zoo",
+        href: "https://github.com/aanurraj/daily-kindle-email",
       },
     },
   ],
   work: [
     {
-      company: "Infogain",
-      link: "https://www.infogain.com/",
-      badges: ["Remote"],
-      title: "Full Stack Engineer",
-      start: "2022",
+      company: "Infosys Limited",
+      link: "https://www.infosys.com/",
+      badges: ["Fulltime"],
+      title: "Specialist Programmer L2 (not so fancy name for a SDE 2)",
+      start: "2020",
       end: "Present",
       description:
-        "Implemented new features, led a squad to add GTM(Google Tag Manager), improved code coverage, initiated migration from NextJS10 to NextJS13 and . Technologies: NextJs, TypeScript, JavaScript",
-    },
+        `"Engineered more than 12 enterprise level application for one of the top 3 company by market cap. Notable backend includes a critical budget allocation for new jobs created.
+        Technologies Used: NodeJs, Express.js, Java Springboot, Microservices, Python, Docker, Kubernetes, AWS, SAP HANA XS Classic and Advanced`},
     {
-      company: "NNT",
-      link: "https://www.linkedin.com/company/nggawe-nirman/",
-      badges: ["Remote"],
-      title: "Full Stack Engineer Intern",
+      company: "OpenMined",
+      link: "https://openmined.org",
+      badges: ["Open Source"],
+      title: "Crypto SMPC Dev",
       start: "2021",
       end: 2022,
       description:
-        "Worked on a monorepo PoC(Proof of Concept) for NextJs Project and moved to production.",
+        "Worked on OpenMined's Privacy Preserving Machine Learning (PPML) library PySyft and supporting SyMPC library. Notable cotribution includes benchmarking different SMPC function and decoupling SyMPC from PySyft.",
     },
   ],
 };
